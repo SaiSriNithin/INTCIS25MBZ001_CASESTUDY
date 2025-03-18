@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height:80px;
+    padding: 0 30px;
+    background-color: blue;
+}
+.navbar .logo {
+    font-size: 42px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.navbar a{
+    color: white;
+    padding: 10px 15px;
+}
+.nav-links{
+    font-size: 22px;
+    display:flex;
+    gap:10px;
+}
+.footer{
+    height: 40px;
+    color: white;
+    background-color: grey;
+    margin-top: auto;
+}
