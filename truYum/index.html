@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="table_style.css">
 </head>
 <body>
     <header id="header">     
@@ -20,44 +21,54 @@
             </div>
         </nav>
     </header>
-    <table>
-        <tr>
-            <th>Name</th>
-            <th>Price</th>
-            <th>Category</th>
-            <th>Free Delivery</th>
-        </tr>
-        <tr>
-            <td>Sandwich</td>
-            <td>99.00</td>
-            <td>Main Course</td>
-            <td>Yes</td>
-        </tr>
-        <tr>
-            <td>Burger</td>
-            <td>129.00</td>
-            <td>Main Course</td>
-            <td>Yes</td>
-        </tr>
-        <tr>
-            <td>Pizza</td>
-            <td>149.00</td>
-            <td>Main Course</td>
-            <td>Yes</td>
-        </tr>
-        <tr>
-            <td>French Fries</td>
-            <td>57.00</td>
-            <td>Starters</td>
-            <td>No</td>
-        </tr>
-        <tr>
-            <td>Chocolate Brownie</td>
-            <td>32.00</td>
-            <td>Dessert</td>
-            <td>No</td>
-        </tr>
-    </table>
+     <div id="table-body">
+        <table class="table">
+            <caption id="table-heading">Menu Items</caption>
+            <thead class="table-subheading">
+                <td>Name</td>
+                <td>Price</td>
+                <td>Active</td>
+                <td>Date of Launch</td>
+                <td>Category</td>
+                <td>Free Delivery</td>
+                <td>Action</td>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sandwich</td>
+                    <td>99.00</td>
+                    <td>Main Course</td>
+                    <td>Yes</td>
+                    <td>115</td>
+                    </tr>
+                </tr>
+                <tr>
+                    <td>Burger</td>
+                    <td>129.00</td>
+                    <td>Main Course</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>Pizza</td>
+                    <td>149.00</td>
+                    <td>Main Course</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>French Fries</td>
+                    <td>57.00</td>
+                    <td>Starters</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>Chocolate Brownie</td>
+                    <td>32.00</td>
+                    <td>Dessert</td>
+                    <td>No</td>
+                </tr>
+            </tbody>   
+        </table>
+    </div>
     <footer class="footer">Copyright &#169; 2025</footer>
 </body>
 </html>

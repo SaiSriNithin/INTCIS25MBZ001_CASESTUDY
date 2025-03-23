@@ -1,0 +1,21 @@
+.table{
+    margin-left: 100px;
+    border-spacing: 25px;
+    padding-right: 1px;
+    padding-top: 1px;
+  
+}
+
+#table-heading{
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: 28px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    text-align: start;
+}
+
+.table-subheading{
+    font-weight: bold;
+    font-size: 22px;
+}
