@@ -25,3 +25,9 @@
 td{
     font-size: 20px;
 }
+#table-heading2{
+    color:green;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+}
