@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/edit-menu-item.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-title">
+                <a href="#" class="navtitle">truYum</a>
+                <img class="logo" src="images/logo.png" alt="img" >
+            </div>
+            <div class="nav-links">
+                <a href="menu-item-list-customer.html">Menu</a>
+            </div>
+        </nav>
+    </header>
+    <div id="edit-menu-item-body">
+        <form action="edit-menu-item-status.html" method="POST">
+            <h1 class="edit-menu-item-heading">Edit Menu Item</h1>
+            <div class="edit-menu-item-form">
+                <div class="form-group-name">
+                    <label for="title" id="title-label">Name:</label>
+                    <input type="text" id="title" name="name" value="">
+                </div>
+        
+               <div class="form-group-line">
+                    <div class="form-group">
+                        <label for="price">Price (Rs.):</label>
+                        <input type="text" id="price" name="price" value="">
+                    </div>
+                    <div class="form-group-radio">
+                        <label for="inStock">Active:</label>
+                        <div class="radio-group">
+                            <input type="radio" id="inStock" name="active" value="yes">
+                            <label for="active-yes">Yes</label>       
+                            <input type="radio" id="inStock" name="active" value="no">
+                            <label for="active-no">No</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="dateOfLaunch">Date of Launch:</label>
+                        <input type="date" id="dateOfLaunch" name="date-of-launch" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="category">Category:</label>
+                        <select id="category" name="category">
+                            <option value="starters">Starters</option>
+                            <option value="main-course" selected>Main Course</option>
+                            <option value="dessert">Dessert</option>
+                            <option value="drinks">Drinks</option>
+                        </select>
+                    </div>
+               </div>
+        
+                <div class="checkbox-group">
+                    <input type="checkbox" id="free-delivery" name="free-delivery" value="">
+                    <label for="free-delivery">Free Delivery</label>
+                </div>
+        
+                <div class="button-group">
+                    <input type="submit" value="Save">
+                </div>
+            </div>
+        </form>
+        
+    </div>
+    <footer class="footer">Copyright &#169; 2025</footer>
+    
+</body>
+</html>
