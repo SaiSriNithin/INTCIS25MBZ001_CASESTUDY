@@ -1,5 +1,8 @@
-.table{
+#table-body{
     margin-left: 100px;
+}
+
+.table{
     border-spacing: 25px;
     padding-right: 1px;
     padding-top: 1px;
@@ -18,4 +21,7 @@
 .table-subheading{
     font-weight: bold;
     font-size: 22px;
+}
+td{
+    font-size: 20px;
 }
