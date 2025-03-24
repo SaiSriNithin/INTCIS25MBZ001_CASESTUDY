@@ -43,7 +43,12 @@ createCart();
 document.querySelectorAll(".delete").forEach(function(element, index) {
     element.addEventListener("click", function() {
 
-        if (sessionStorage.getItem("cart") === null) { return; }
+        if (sessionStorage.getItem("cart") === null) { 
+            window.location.href="cart-empty.html";
+        }
+        else{
+            window.location.href="cart-notification.html";
+        }
 
         cart = JSON.parse(sessionStorage.cart);
         cart.splice(index, 1);
