@@ -4,24 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles/index.css"></link>
     <link rel="stylesheet" href="styles/style.css"></link>
-    <link rel="stylesheet" href="styles/cart.css"></link>
 </head>
 <body>
     <header>
         <nav class="navbar">
             <div class="nav-title">
-                <a href="#" class="navtitle">truYum</a>
+                <a href="index.html" class="navtitle">truYum</a>
                 <img class="logo" src="images/logo.png" alt="img" >
-            </div>
-            <div class="nav-links">
-                <a href="menu-item-list-customer.html">Menu</a>
-                <a href="cart-notification.html">Cart</a>
             </div>
         </nav>
     </header>
-    <h2 class="empty-cart-heading">Cart</h2>
-    <p class="empty-cart-text">No item in this cart.Use 'Add to Cart' option in <a href="menu-item-list-customer.html">Menu item List.</a></p>
+   <div class="buttons">
+    <a href="menu-item-list-admin.html">
+        <button class="button">Admin</button>
+    </a>
+    <a href="menu-item-list-customer.html">
+        <button class="button">Customer</button>
+    </a>    
+   </div>
     <footer class="footer">Copyright &#169; 2025</footer>
+    <script src="js/menuItems.js"></script>
 </body>
 </html>

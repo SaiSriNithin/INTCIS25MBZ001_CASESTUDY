@@ -11,7 +11,7 @@
     <header>
         <nav class="navbar">
             <div class="nav-title">
-                <a href="#" class="navtitle">truYum</a>
+                <a href="index.html" class="navtitle">truYum</a>
                 <img class="logo" src="images/logo.png" alt="img" >
             </div>
             <div class="nav-links">
@@ -20,31 +20,31 @@
         </nav>
     </header>
     <div id="edit-menu-item-body">
-        <form action="edit-menu-item-status.html" method="POST">
+        <form onsubmit="editMenuItem()" action="edit-menu-item-status.html" id="edit-menu-form">
             <h1 class="edit-menu-item-heading">Edit Menu Item</h1>
             <div class="edit-menu-item-form">
                 <div class="form-group-name">
                     <label for="title" id="title-label">Name:</label>
-                    <input type="text" id="title" name="name" value="">
+                    <input type="text" id="title" name="title" >
                 </div>
         
                <div class="form-group-line">
                     <div class="form-group">
                         <label for="price">Price (Rs.):</label>
-                        <input type="text" id="price" name="price" value="">
+                        <input type="number" id="price" name="price" min="1" required>
                     </div>
                     <div class="form-group-radio">
                         <label for="inStock">Active:</label>
                         <div class="radio-group">
-                            <input type="radio" id="inStock" name="active" value="yes">
-                            <label for="active-yes">Yes</label>       
-                            <input type="radio" id="inStock" name="active" value="no">
-                            <label for="active-no">No</label>
+                            <input type="radio" id="inStockYes" name="inStock" value="yes">
+                            <label for="inStockYes">Yes</label>       
+                            <input type="radio" id="inStockNo" name="inStock" value="no">
+                            <label for="inStockNo">No</label>
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="dateOfLaunch">Date of Launch:</label>
-                        <input type="date" id="dateOfLaunch" name="date-of-launch" value="">
+                        <input type="date" id="dateOfLaunch" name="dateOfLaunch" required>
                     </div>
                     <div class="form-group">
                         <label for="category">Category:</label>
@@ -63,13 +63,13 @@
                 </div>
         
                 <div class="button-group">
-                    <input type="submit" value="Save">
+                    <button type="submit" >Save</button>
                 </div>
             </div>
         </form>
         
     </div>
     <footer class="footer">Copyright &#169; 2025</footer>
-    
+    <script src="js/editMenuItem.js"></script>
 </body>
 </html>

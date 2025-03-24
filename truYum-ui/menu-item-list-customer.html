@@ -11,19 +11,18 @@
     <header>
         <nav class="navbar">
             <div class="nav-title">
-                <a href="#" class="navtitle">truYum</a>
+                <a href="index.html" class="navtitle">truYum</a>
                 <img class="logo" src="images/logo.png" alt="img" >
             </div>
             <div class="nav-links">
                 <a href="menu-item-list-customer.html">Menu</a>
-                <a href="cart-empty.html">Cart</a>
+                <a href="cart-notification.html">Cart</a>
             </div>
         </nav>
     </header>
     <div id="table-body">
         <table class="table">
             <caption id="table-heading">Menu Items</caption>
-            <caption id="table-heading2">Item added to Cart Successfully</caption>
             <thead class="table-subheading">
                 <td>Name</td>
                 <td>Free Delivery</td>
@@ -31,19 +30,11 @@
                 <td>Category</td>
                 <td>Action</td>
             </thead>
-            <tbody>
-                <tr>
-                    <td>Sandwich</td>
-                    <td>99.00</td>
-                    <td>Main Course</td>
-                    <td>Yes</td>
-                    <td>115</td>
-                    <td><a href="cart-notification.html">Add to cart</a></td>
-                    </tr>
-                </tr>
-            </tbody>    
+            <tbody id="table-items-body"></tbody>
         </table>    
     </div>
     <footer class="footer">Copyright &#169; 2025</footer>
+    <script src="js/menuItems.js"></script>
+    <script src="js/menuItemListCustomer.js"></script>
 </body>
 </html>
