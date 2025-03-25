@@ -20,7 +20,7 @@ function createCart() {
         total += Number(cart[i].price);
 
         var del = document.createElement("a");
-        del.href = "cart-notification.html";
+        del.href = "#";
         del.innerHTML = "Delete";
         del.classList.add("delete");
 
@@ -42,17 +42,17 @@ createCart();
 
 document.querySelectorAll(".delete").forEach(function(element, index) {
     element.addEventListener("click", function() {
-
-        if (sessionStorage.getItem("cart") === null) { 
-            window.location.href="cart-empty.html";
-        }
-        else{
-            window.location.href="cart-notification.html";
-        }
-
-        cart = JSON.parse(sessionStorage.cart);
+        var cart = JSON.parse(sessionStorage.cart);
         cart.splice(index, 1);
-
         sessionStorage.setItem("cart", JSON.stringify(cart));
+        cart=JSON.parse(sessionStorage.getItem("cart"));
+        
+         if (cart.length === 0) {
+            window.location.href = "cart-empty.html";
+        } else {
+             window.location.href="cart-notification.html";
+         }
+        
+        
     });
 });
